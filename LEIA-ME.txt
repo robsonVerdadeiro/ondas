@@ -1,0 +1,16 @@
+COMO GERAR O APK
+
+OPCAO A - Android Studio (mais simples)
+ 1. Instale o Android Studio (developer.android.com/studio).
+ 2. File > Open > selecione esta pasta (OndasApp). Aguarde o Gradle sincronizar.
+ 3. Build > Build Bundle(s) / APK(s) > Build APK(s).
+ 4. O arquivo fica em app/build/outputs/apk/debug/app-debug.apk
+    (para release: Build > Generate Signed App Bundle / APK, ou rode: gradlew assembleRelease)
+
+OPCAO B - Sem instalar nada (GitHub Actions)
+ 1. Crie um repositorio no GitHub e suba o conteudo desta pasta (inclusive a pasta .github).
+ 2. Aba Actions > "Build APK" > aguarde ~3 min.
+ 3. Baixe o artefato "OndasEstacionarias-apk".
+
+INSTALAR NO CELULAR
+ Copie o .apk, abra e permita "instalar de fontes desconhecidas".
